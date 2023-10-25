@@ -1,0 +1,20 @@
+### get all
+GET http://localhost:3001/api/persons
+
+### get by id
+GET http://localhost:3001/api/persons/1
+
+### get by id (bad id)
+GET http://localhost:3001/api/persons/99
+
+### post
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Amanda Rito",
+    "number": "650-999-9999"
+}
+
+### delete by id
+DELETE http://localhost:3001/api/persons/1
